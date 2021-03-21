@@ -1,0 +1,248 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="master.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Ying's Personal Site</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="Asset/img/favicon-32x32.png">
+</head>
+
+<body>
+  <!-- Introduction -->
+  <div class="introduction">
+    <div class="container">
+
+      <div class="menu">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-info">About me</button>
+          <button type="button" class="btn btn-info" onClick="document.getElementById('education').scrollIntoView();">Education</button>
+          <button type="button" class="btn btn-info" onClick="document.getElementById('experience').scrollIntoView();">Experience</button>
+          <button type="button" class="btn btn-info" onClick="document.getElementById('skill').scrollIntoView();">Skills</button>
+          <button type="button" class="btn btn-info" onClick="document.getElementById('contact').scrollIntoView();">Contact</button>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-9">
+          <div>
+            <strong>
+              <p class="introduction-frase1">Hi,<br>
+                I'm <span class="name">Ying</span>,<br>
+                Software Engineer</p>
+            </strong>
+            <em>
+              <p class="introduction-frase2">
+                FrontEnd Developer
+              </p>
+            </em>
+            <button type="button" class="btn btn-outline-info btn-lg">Contact me</button>
+
+          </div>
+        </div>
+
+        <div class="col-3">
+          <img class="profileImage" src="https://media-exp1.licdn.com/dms/image/C4D03AQE8XvzDC8V8AQ/profile-displayphoto-shrink_200_200/0/1573337081499?e=1619049600&v=beta&t=ZJCmLKLyDsU7yyGw1ZZe8GBckzvVBGpa97bwvaDQObA" alt="ying profile picture">
+        </div>
+      </div>
+      <button class="btn btn-outline-info hide" onclick="topFunction()" id="scrollBtn">Top</button>
+    </div>
+  </div>
+  <!-- Education -->
+
+  <div class="education" id="education">
+    <div class="container p-5">
+      <P class="title"><strong>Education</strong></p>
+      <div class="row spacing mb-5">
+        <div class="text-center education-card ml-5">
+          <div class="flip-card pt-5">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="pb-3" src="Asset\img\Mack.png" alt="notfound" height="100"><br>
+                <strong><a href="https://www.mackenzie.br/">Universidade Presbiteriana Mackenzie</a></strong>
+                <p>Engenharia de Produção | 2016 - 2020</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>Monitoria</h1>
+                <p><em>Estatistica</em></p>
+                <p>em 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center education-card ml-5">
+          <div class="flip-card pt-5">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="pb-3" src="Asset\img\Fiap.png" alt="notfound" height="100"><br>
+                <strong><a href="https://www.fiap.com.br/">Faculdade de Informática e Administração Paulista</a></strong>
+                <p>Análise e Desenvolvimento de Sistemas | 2021 - atual</p>
+              </div>
+              <div class="flip-card-back">
+                <!-- flip card content -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <h4>Hold the box to see about complementary activity !</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="experience" id="experience">
+    <div class="container p-5">
+      <p class="title"><strong>Experience</strong></p>
+      <div class="experience-Avanade p-5">
+        <img class="pb-3" src="Asset\img\Avanade.png" alt="notfound" height="150"><br>
+        <h4>Engenheiro de software júnior Avanade | 2018/04 - 2020/06</h4>
+        <a class="btn btn-dark m-3" data-bs-toggle="collapse" href="#Avanade" role="button" aria-expanded="false" aria-controls="collapseExample">Saiba Mais +</a>
+        <div class="collapse" id="Avanade">
+          <div class="card card-body">
+            Projeto Claro - Base:<br>
+            Desenvolvimento de uma nova plataforma digital para vendas declientes base, seguindo a Metodologia Scrum.<br>
+            <br>
+            Função:<br>
+            Criação do FrontEnd com Angular 7 (posteriormente, a migraçãopara Angular 8) junto com usos de Bootstrap4, Angular material,Jquery,<br>
+            Lazy loading design pattern e entre outras ferramentas.Auxílio em BackEnd utilizando Node.js para criação demiddleware que gerenciam as <br>
+            regras de negócio.
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-Ticket p-5 pt-0">
+        <img class="pb-3" src="Asset\img\Ticket.svg" alt="notfound" height="150"><br>
+        <h4>Estágio na área de Gestão de Projetos Ticket | 2018/10 - 2019/02</h4>
+        <a class="btn btn-dark m-3" data-bs-toggle="collapse" href="#Ticket" role="button" aria-expanded="false" aria-controls="collapseExample">Saiba Mais +</a>
+        <div class="collapse" id="Ticket">
+          <div class="card card-body">
+            Gerenciamento financeiro dos projetos de TI. <br>
+            <br>
+            Funções: <br>
+            Apoio no controle e análise no lançamento de horas da Equipe; <br>
+            Apoio no controle financeiro da área;<br>
+            Apoio a contratos, ordem de serviço e interlocução com asdemais áreas;<br>
+            Atualização das notas fiscais na ferramenta (JIRA);<br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skills -->
+  <div class="skill" id="skill">
+    <div class="container p-5">
+      <p class="title"><strong>Skills</strong></p>
+      <div class="p-5">
+        <div class="row mt-5">
+          <div class="col-2 pl-5">
+            <strong>HTML</strong>
+          </div>
+          <div class="col-10">
+            <div class="progress mt-1 ml-5">
+              <div class="progress-value " id="HTML"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mt-5">
+          <div class="col-2 pl-5">
+            <strong>CSS</strong>
+          </div>
+          <div class="col-10">
+            <div class="progress mt-1 ml-5">
+              <div class="progress-value" id="CSS"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mt-5">
+          <div class="col-2 pl-5">
+            <strong>JS</strong>
+          </div>
+          <div class="col-10">
+            <div class="progress mt-1 ml-5">
+              <div class="progress-value " id="JS"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mt-5">
+          <div class="col-2 pl-5">
+            <strong>Angular</strong>
+          </div>
+          <div class="col-10">
+            <div class="progress mt-1 ml-5">
+              <div class="progress-value " id="Angular"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mt-5">
+          <div class="col-2 pl-5">
+            <strong>React</strong>
+          </div>
+          <div class="col-10">
+            <div class="progress mt-1 ml-5">
+              <div class="progress-value " id="React"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mt-5">
+          <div class="col-2 pl-5">
+            <strong>Node</strong>
+          </div>
+          <div class="col-10">
+            <div class="progress mt-1 ml-5">
+              <div class="progress-value " id="Node"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mt-5">
+          <div class="col-2 pl-5">
+            <strong>SQL</strong>
+          </div>
+          <div class="col-10">
+            <div class="progress mt-1 ml-5">
+              <div class="progress-value " id="SQL"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div class="contact" id="contact">
+    <div class="container p-5">
+      <p class="title"><strong>Contact</strong></p>
+      <div class="row spacing">
+        <div class="col">
+          <h3>Details about my contact</h3>
+          <p>Phone: (11)98287-0009</p>
+          <p>Email: ying_byl@hotmail.com</p>
+          <p>Adress: São Paulo , Aclimação</p>
+          <form class="row">
+            <input type="name" class="form-control col m-2" placeholder="Name">
+            <input type="email" class="form-control col m-2" placeholder="Email">
+            <input type="text" class="form-control m-2" placeholder="Subject">
+            <textarea class="form-control m-2" placeholder="Leave a comment here" style="height: 100px"></textarea>
+            <div class="col-12 text-right">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col ml-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486508375!2d-46.87548256009561!3d-23.681531510015812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1616334730054!5m2!1sen!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap4 JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
